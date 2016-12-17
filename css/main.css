@@ -168,20 +168,25 @@ nav ul li.active {
   padding-top: 136px;
   padding-right: 50px;
 }
-.mainContent .content table {
-  background-color: black;
-}
 .mainContent .content table td {
-  border: 3px solid #fff;
+  border: 3px solid white;
   width: 15vw;
   height: 15vw;
+  background-color: black;
   color: #fff;
+  transition: 0.5s;
+}
+.mainContent .content table td img {
+  width: 100%;
 }
 .mainContent .content table td h2 {
   text-transform: uppercase;
   margin-left: 15px;
   font-weight: 700;
   font-size: 2vw;
+}
+.mainContent .content table td:hover {
+  border: 3px solid #E2C336;
 }
 
 /* ==========================================================================

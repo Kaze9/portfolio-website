@@ -101,6 +101,7 @@ $navcolor: black;
 $mainBG: #fff;
 $textcolor: black;
 $magenta: #FF00B2;
+$yellow: #E2C336;
 $tablecolor: #fff;
 
 a:link {
@@ -186,18 +187,26 @@ nav ul {
         padding-top: 136px; 
         padding-right:50px;
         table {
-            background-color: black;
+            
             td {
-                border: 3px solid $tablecolor;
+                border: 3px solid white;
                 width: 15vw;
                 height: 15vw;
+                background-color: black;
                 color: $tablecolor;
+                transition: 0.5s;
+                img {
+                    width: 100%;
+                }
                 h2 {
                     text-transform: uppercase;
                     margin-left: 15px;
                     font-weight: 700;
                     font-size: 2vw;
                 }
+            }
+            td:hover {
+                border: 3px solid $yellow;
             }
         }
     }
